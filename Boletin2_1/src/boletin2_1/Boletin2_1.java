@@ -24,7 +24,7 @@ public class Boletin2_1 {
         precioTarifa=leer.nextFloat();
         System.out.println("Introduzca el precio pagado: ");
         precioPagado=leer.nextFloat();
-        float porcentaje=(precioTarifa-precioPagado)/100;
+        float porcentaje=(100-precioPagado/precioTarifa*100);
         System.out.println("El precio de la tarifa es: "+precioTarifa+" el precio pagado fue: "+precioPagado+" el descuento fue de "+porcentaje);
         
     }
